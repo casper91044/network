@@ -9,7 +9,7 @@ export const Post = (props) => {
         <img src="https://html5css.ru/w3images/avatar2.png" alt="avatar"/>
         {props.message}
         <div>
-            <span>like</span>
+            <span>like</span> {props.likes}
         </div>
     </div>
 }

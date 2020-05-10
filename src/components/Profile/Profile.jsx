@@ -3,7 +3,7 @@ import style from "./Profile.module.css"
 import {MyPosts} from "./MyPosts/MyPosts";
 
 export function Profile() {
-    return <div className={style.app_content}>
+    return <div>
         <div>
             <img src="https://www.w3schools.com/howto/img_snow_wide.jpg" alt="content image"/>
         </div>
