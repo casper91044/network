@@ -19,6 +19,12 @@ export const Dialogs = (props) => {
             <div className={style.messages}>
                 {messagesElements}
             </div>
+            <div>
+                <textarea>
+
+                </textarea>
+            </div>
+            <div><button>Add</button></div>
         </div>
     )
 }
