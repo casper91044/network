@@ -1,19 +1,20 @@
 import React from "react";
 import style from "./ProfileInfo.module.css"
 import {Preloader} from "../../common/Preloader/Preloader";
+import {Profile} from "../Profile";
+import ProfileStatus from "./ProfileStatus"
 
 export function ProfileInfo(props) {
     if (!props.profile) {
         return <Preloader/>
     }
-    return <div className={style.profileinfo}>
-        <div>
-            <img src="https://www.w3schools.com/howto/img_snow_wide.jpg" alt="content image"/>
+    return (
+        <div className={style.profileinfo}>
+            <div>
+                <img src={props.profile.photos.small}/>
+                <ProfileStatus status={"xxx"}/>
+            </div>
         </div>
-        <div>
-            <img src={props.profile.photos.small}/>
-            avatar + description
-        </div>
-    </div>
+    )
 }
 
