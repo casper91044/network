@@ -1,0 +1,13 @@
+.formControl.error span {
+    color: crimson;
+}
+.formControl.error input,
+.formControl.error textarea {
+    border:solid crimson 2px;
+}
+.formSumError {
+    border: solid crimson 2px;
+    padding: 5px;
+    width: 150px;
+    color: chocolate;
+}
